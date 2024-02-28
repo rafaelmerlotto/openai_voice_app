@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "include": [
+      "src/*",
+      "types/*",
+      "mp3/*"
+    ],
+    "typeRoots": [
+      "src",
+      "node_modules/@types",
+      "custom_typings/"
+    ]
+  }
+}
