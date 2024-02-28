@@ -23,7 +23,7 @@ code {
 
 audio::-webkit-media-controls-panel{
   /* background-color: #0B486B; */
-  background: linear-gradient(to left, #F56217, #0B486B );
+  background: linear-gradient(to left, #393e6f, #4c5f7a );
   opacity: 0.9;
 }
 
@@ -35,7 +35,7 @@ audio::-webkit-media-controls-panel{
   width: 120px;
   height: 22px;
   border-radius: 20px;
-  color:#F56217;
+  color:black;
   /* background-color: #F56217; */
   border: 2px solid;
   position: relative;
@@ -53,3 +53,4 @@ audio::-webkit-media-controls-panel{
 @keyframes l6 {
     100% {inset:0}
 }
+
