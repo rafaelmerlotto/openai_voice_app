@@ -1,5 +1,5 @@
 import { ApiService } from "./api";
 
 
-const url:string = "http://localhost:4000";
+const url:string = "https://openai-voice-app.onrender.com/";
 export const apiService:ApiService = new ApiService(`${url}`)
