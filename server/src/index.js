@@ -29,11 +29,13 @@ app.post("/text", async (req, res) => {
 
     const buffer = Buffer.from(await mp3.arrayBuffer());
     await Promise.resolve(fs.promises.writeFile(speechFile, buffer))
-    res.send({ msg: text })
   }
   main()
+  res.status(200).send({ msg: text })
+})
 
-
+app.get("/", async (req,res) => {
+  res.status(200).send("Server is running 🚀")
 })
 
 const PORT = 4000;
