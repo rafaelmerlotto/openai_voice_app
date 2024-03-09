@@ -19,6 +19,7 @@ npm install
 OPENAI_API_KEY
 ```
 To get the API key, you need to visit the website: https://openai.com/blog/openai-api
+
 4. for run this app, you need on both directories frontend and server execute the command:
 ```
 npm start
