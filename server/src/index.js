@@ -17,13 +17,13 @@ const openai = new OpenAI({
 })
 
 app.post("/text", async (req, res) => {
-  const { text } = req.body
+  const { text, voice } = req.body
   const speechFile = path.resolve("../frontend/src/audio/speech.mp3");
 
   async function main() {
     const mp3 = await openai.audio.speech.create({
       model: "tts-1",
-      voice: "nova",
+      voice: voice,
       input: text,
     });
 

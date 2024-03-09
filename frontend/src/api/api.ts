@@ -3,13 +3,13 @@ import { Text } from "../models/model";
 export class ApiService{
     constructor(private readonly url: string){}
 
-    async getText(text:string): Promise<Text[] | null>{
+    async getText(text:string, voice: string): Promise<Text[] | null>{
         const res: Response = await fetch(`${this.url}/text`,{
             method: "POST",
             headers:{
                 'content-type': 'application/json', 
             },
-            body: JSON.stringify({text:text})
+            body: JSON.stringify({text:text, voice:voice})
         
         })
         if(res.ok){
